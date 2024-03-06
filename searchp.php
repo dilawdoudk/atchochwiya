@@ -1,0 +1,158 @@
+<?php require 'PHP/db_conn.php'; ?>
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+   
+    <meta   charset="UTF-8">
+     <meta name="description" content="موقع اتشو شوية يمكنك من البحث عن متبرعين  محتملين بالدم في  جميع ربوع الجزائر من ولايات او دوائر او بلديات  ">
+    <meta name="keywords" content="achtochwiya, atcho chwiya , atchou chwiya , atch chwiya 
+     ">
+    
+    <title>موقع أتشو شوية  :البحث عن متبرعين  </title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styling.css">
+    <script src="https://kit.fontawesome.com/77b6353fe5.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+     <nav id="navbar">
+       
+        <h1 class="logo">
+           <a href="index.php" >
+            <span class="text-primary">
+                <i class="fas fa-hand-holding-water"></i> أتشو</span> شوية
+                </a>
+        </h1>
+        
+        <ul>
+            <il><a href="index.php">الرئيسية</a></il>
+            <il><a href="index.php#what">الخدمات</a></il>
+            <il><a href="index.php#who">من</a></il>
+            <il><a href="callUS.php">اتصل بنا</a></il>
+             <il><a href="donating.php">التبرع بالدم </a></il>
+             <il><a href="support.php">ادعمنا  </a></il>
+             <il><a href="usersC.php">شروط الاستخدام  </a></il>
+        </ul>
+        
+        <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+               </label>
+    </nav>
+
+
+
+
+    <section id="popupSearch" class="popupSearch">
+
+
+        
+ 
+            <form id="form0" method="post" action="PHP/search.php" >
+    <div class="form2">
+                <div class="adress4">
+                    
+
+                    
+                        <select name="Wilaya2" id="wilaya2" onchange="walo2();">
+
+                        </select>
+                    
+
+            
+                        <select name="Dayra2" id="dayra2" onchange="walot2()">
+                            <option value= -1 selected="selected"> اختر الدائرة </option>
+
+                        </select>
+                    
+
+                    
+
+                        <select name="Baladiya2" id="baladiya2">
+                            <option value= -1 selected="selected"> اختر البلدية </option>
+
+                        </select>
+                    
+
+                </div>
+                <div class="sbloodgroup2">
+                    <select name="Sgroup2" id="bloodgroup2">
+                      
+                       <option value= -1 selected="selected"> اختر فصيلة الدم </option>
+                        <option value="A+"> A+ </option>
+                        <option value="A-"> A- </option>
+                        <option value="B+"> B+ </option>
+                        <option value="B-"> B- </option>
+                       <option value="AB+"> AB+ </option>
+                       <option value="AB-"> AB- </option>
+                        <option value="O+"> O+ </option>
+                        <option value="O-"> O- </option>
+                        
+                    </select>
+
+                </div>
+
+                <div class="submit2" >
+                    <input class="submit2btn"  value="البحث عن متبرع"  type="submit"  > 
+                    </div>
+    </div>
+            </form>
+        
+<table id="content-table" class="content-table">
+  <thead>
+    <tr>
+      <th>اسم المتبرع</th>
+      <th>الدائرة</th>
+      <th>البلدية</th>
+      <th>رقم الهاتف</th>
+      <th>طريقة الاتصال</th>
+       <th>وقت الاتصال</th>
+    </tr>
+  </thead>
+  <tbody id="drew">
+     
+    
+
+  </tbody>
+</table>
+          <p class="messageT"  >
+             
+            </p>
+            <div class="containerrr ">
+    <div id="pagination-wrapper">
+     <button  class="bttnS"> << </button>
+       
+        <div class="pagina-wrapper">
+        
+       
+       
+       </div>
+       
+       <button  class="bttnF"> >>  </button>
+        
+    </div>
+</div>
+      
+       
+    </section>
+    
+    
+    
+       
+  
+
+    <footer id="main-footer" class="text-center3">
+        <div class="container4">
+            <p>حقوق النشر محفوظة لموقع اتشو شوية &copy; 2021,</p>
+        </div>
+    </footer>
+
+
+
+    <script src="js/searchJ.js"> </script>
+</body>
+
+</html>

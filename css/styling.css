@@ -1,0 +1,1669 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@media  (min-width: 320px) and (max-width: 1029px) {
+    
+body{
+    font-family: 'Cairo', sans-serif;
+    line-height: 2em;
+    font-size: 200%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    font-size: 200%;
+}
+.text-primary{
+    
+    
+    color: rgba(255,0,0,0.9);
+}
+#navbar{
+    height: 130px;
+     width: 100%;
+    position: sticky;
+    top: 0;
+    
+    background-color:rgba(255,255,255,0.73);
+    color:black;
+   
+    padding: 1.5rem;
+    z-index: 99;
+     
+    
+}
+#navbar ul{
+    font-size: 150%;
+    line-height: 7rem;
+    border-radius: 0 0 30px 0;
+    
+   background-color:rgba(255,255,255,0.79);
+    top: 129.4px;
+    position: fixed;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+     width: 50%;
+    height: 60vh;
+    left: -100%;
+    transition: all .5s;
+
+}
+#navbar ul il a{
+      display: block;
+    color: black;
+    margin: 0 0.25rem;
+    padding: 0.75rem;
+}
+#navbar ul il a:hover a.active{
+    background-color:rgba(255,0,0,0.6); 
+    border-radius: 6px;
+}
+       
+ .checkbtn{
+     position: absolute;
+     top: 30px;
+     left: 50px;
+  font-size: 4rem;
+  color: black;
+  line-height: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+#check{
+    position: absolute;
+  display: none;
+}
+ 
+
+
+#showcase{ 
+    background:#333 
+        url('../images/walo.jpg') no-repeat 
+        center center/cover;
+    height: 100vh;
+    color: white;
+}
+
+#showcase .showcase-content{
+  display: flex;
+    flex-direction:column; 
+        text-align:center;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0, 0, 0,0.4);
+    height: 100%;
+    width: 100%;
+}
+
+
+.lhead{
+    font-size: 8rem;
+    margin-bottom: 1rem;
+    line-height: 10rem;
+}
+.lead{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.btn{
+    display: inline-block;
+    color: white;
+     background-color: rgba(255,0,0,0.9) ;
+    height: 80px;
+    width: 280px;
+    text-align: center;
+    justify-content: center;
+    line-height: 80px;
+    border-radius: 20px;
+    
+    
+}
+    .btn:hover .btn.active {
+     background:black;
+        color:white; 
+    
+
+    }
+
+
+#what{
+    background-color: aliceblue;
+    color: black;
+}
+.container{
+   display: flex;
+    
+    padding: 4rem 5.5rem 5.5rem 5.5rem;
+    align-items:stretch;
+  flex-direction: column;
+       
+}
+.item{
+    
+    flex: 1;
+    font-size: 200%;
+    background-color: rgba(178,34,34,1);
+    border-radius: 50%;
+    text-align: center;
+    padding: 2.1rem;
+    max-height: 150px;
+    max-width: 150px;
+    min-height: 150px;
+    min-width: 150px;
+    width: 80px;
+    height: 80px;  
+    box-shadow: 0 0 20px rgba(178,34,34,0.8);
+}
+.waloo {
+    
+    padding: 30px;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    margin: 50px 30px;
+    flex-direction: row;
+    border-radius: 35px;
+    box-shadow: 0 0 40px rgba(178,34,34,0.8);
+     background-color: rgba(255,0,0,0.1);
+}
+    
+    
+.container a:hover{ 
+    color: rgba(255,0,0,1)
+}
+
+.text-center{
+    text-align: center;
+    font-size: 6rem;
+    padding: 4rem;
+        
+}
+.article{
+    flex: 3;
+    text-align: center;
+    margin: 20px 16px 20px 14px ;
+    
+}
+
+
+
+#who{
+    background-color: aliceblue;
+   display: flex;
+     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+      
+}
+.who-container{ 
+    color: black;
+    
+    
+    align-items: center;
+    justify-content: center;
+     text-align: center; 
+    width: 90%;
+     box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    border-radius: 50px;
+    background:#333
+        url('../images/people.jpg') no-repeat
+        center center/cover;
+    margin-bottom: 80px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.who-text {
+    
+    flex: 1;
+    margin: 10%;
+    font-weight: bold;
+   font-size: 150%;
+}
+.text-center2{
+    flex: 1;
+    font-size: 6.2rem;
+    padding-top:  4rem;
+    padding-bottom: 8rem;
+    
+}
+
+
+
+#main-footer {
+
+background-color: rgba(80,80,80,0.95);
+height: 90px;
+    color: black;
+ 
+   
+}
+.container4 {
+    
+    
+     font-size: 1.6rem;  
+     align-content: center;
+    text-align: center;
+    padding-top: 0.5rem; 
+
+}
+
+
+
+.popupform ,.popupDemd{
+    background-color: rgba(0,0,0,0.8);
+    background-size: cover;
+     display: flex; 
+    z-index: 9999;
+    position: fixed;
+    top:0;
+    bottom: 0;
+   height:  100vh;
+    width: 100vw;
+   
+}
+   
+
+.form{
+    
+    width: 72vw;
+    height: 83vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(255,0,0,0.5);
+    padding: 40px;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 32px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 40px rgba(200, 333, 550, 0.6);
+    font-size:  2.6rem;
+   
+   
+}
+
+
+
+
+
+
+     #CALLus{
+         height: 90vh;
+        
+    }
+    #CALLus .form {
+        height: 70vh;
+         background-color: rgba(255,0,0,0.7);
+        box-shadow: 0 0 1.25rem rgba(255,0,0,0.7);
+        
+    }
+     .popupDemd form{
+       padding: 25px;
+    }
+    
+
+.form select{
+    font-family: 'Cairo', sans-serif;
+    border-radius: 24px;
+    margin: 15px;
+    width: 70%;
+    height: 80px;
+    transition: width 0.4s ease-in-out;
+    transition: hieght 0.4s ease-in-out;
+    font-size:  2.9rem;
+    
+}
+   
+    .form select option{
+           
+       max-width: 70%;
+       min-width: 70%;
+        font-size: 0.8rem;
+        
+    }
+    .form  select {
+           
+      font-size: 2.6rem;
+        
+    }
+    
+    .form2 select option{
+           
+       max-width: 70%;
+       min-width: 70%;
+        font-size: 0.8rem;
+        
+    }
+    select{
+    font-family: 'Cairo', sans-serif;
+    border-radius: 26px;
+    margin: 15px;
+    width: 40%;
+    height: 5.3rem;
+    text-align: center;
+    text-align-last:center;
+    font-size:  2.6rem;
+    background-color:   aliceblue;
+    
+    }
+    select option{
+       max-width: 50%;
+       min-width: 50%;
+          
+    }
+    
+      .TtDemd::-webkit-scrollbar {
+          display: none;
+    }
+    
+.form .inname ,.inemail, .inepass, .inphonenmbr, .TtDemd{
+    border-style: none;
+    border: 0px;
+    border-bottom: 4px solid black;
+    font-family: 'Cairo', sans-serif;
+     border-radius: 10px;
+    color: black;
+    margin: 8px;
+    padding: 30px;
+    width: 70%;
+    height: 80px;
+   font-size:  2.63rem;
+    background-color: transparent;
+   transition: width 0.4s ease-in-out;
+    transition: hieght 0.4s ease-in-out;
+}
+     .form .TtDemd{
+        height: 17rem; 
+    }
+    .form .TtDemd:focus{
+     border-radius: 10px;
+      outline: none; 
+      background-color: transparent;
+       width: 100%;
+       height: 19rem;
+    }
+.form .inname:focus ,.inemail:focus, .inepass:focus, .inphonenmbr:focus{
+ outline: none; 
+     border-radius: 10px;
+     background-color: transparent;
+    width: 100%;
+    height: 100px;
+    font-size:  2.8rem;
+ 
+}
+    .form label{
+        font-size: 3.2rem;
+    }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: black;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: black;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: black;
+}
+
+
+.close{
+    position: absolute;
+    font-size:7rem;
+    right: 3rem;
+    top: 2rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.submitt input{
+    border-style: hidden;
+     width: 80%;
+    height: 125px;
+    font-family: 'Cairo', sans-serif;
+    border-radius: 27px;
+    margin: 30px;
+    background-color: rgba(255,0,0,0.9) ;
+    border-color: black; 
+    box-shadow: 0 0 40px rgba(200, 333, 550, 0.6);
+    cursor: pointer;
+    font-size: 2.9rem;
+}
+.submitt input:hover input.active{
+    background:black;
+        color:white;   
+}
+
+
+
+.messageT  {
+    width: 94vw;
+    height: 27vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0,171,102,0.9);
+    border-radius: 30px;
+    text-align: center;
+    justify-content:space-around;
+    align-items: center;
+    box-shadow: 0 0 40px rgba(0,171,102,0.9);
+    position: fixed;
+    top: 25vh;
+    left : 1vw;
+    right:1vw;
+    margin: auto;
+    font-size: 3.9rem;
+    line-height: 5.7rem;
+    
+    }
+    .messageT i {
+        font-size: 250%;
+    }
+
+
+
+
+
+.popupSearch{
+     background: #333
+        url('../images/wiwe.jpg') no-repeat 
+        center center/cover;
+    color: white;
+    height: 160vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.form2{ 
+    width: 99.5%;
+    height: 89%; 
+    background-color: rgba(255,0,0,0.65);
+    border-radius: 25px;
+    margin-top: 2rem ;
+    
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+    align-items:center;
+    box-shadow: 0 0 40px rgba(200, 333, 550, 0.6);
+    font-size: 2.6rem;
+    
+}
+    
+       .containerrr {
+     border-radius: 25px;
+    background-color: rgba(250, 250, 250, 0.4);
+    width: 80%;
+    margin-top: 10px;
+     height: 6rem;
+    text-align: center;
+    justify-content:flex-start;
+    align-items:center;
+    font-size: 2.6rem;
+           padding: 1.1rem;
+     }
+    
+      #pagination-wrapper{
+        display:flex;
+     text-align: center;
+    align-items:center;
+        justify-content: center;
+        
+    }
+    .pagina-wrapper{
+         display: block;
+         text-align: center;
+    align-items:center;
+    }
+    
+    #pagination-wrapper .bttn {
+    border: none;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+         background-color: rgba(255,0,0,0.65);
+        font-size: 2rem;
+        
+    }
+    
+    #pagination-wrapper .bttnS{
+        margin-left: 0.6rem;
+         border: none;
+        width: 4.5rem;
+        height: 3.5rem;
+        border-radius: 19%;
+         background-color: rgba(255,0,0,0.65);
+        font-size: 2.6rem;
+       
+    }
+    #pagination-wrapper .bttnF{
+      margin-right: 0.6rem;
+         border: none;
+           width: 4.5rem;
+        height: 3.5rem;
+        border-radius: 19%;
+         background-color: rgba(255,0,0,0.65);    
+        font-size: 2.6rem;
+    }
+    
+  
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+.adress4{
+    flex: 1;
+
+}
+
+.sbloodgroup2{
+  flex: 0.5 ;
+    width: 100%;
+     
+}
+.submit2{
+    flex: 1;
+        width: 80vw;
+}
+ 
+.submit2btn{
+    border-style: hidden;
+    width: 65%;
+    height: 8rem;
+    font-family: 'Cairo', sans-serif;
+    border-radius: 27px;
+    margin: 25px ;
+    background-color: rgba(255,0,0,0.9) ;
+    border-color: black; 
+    justify-content: center;
+    box-shadow: 0 0 40px rgba(200, 333, 550, 0.6);
+    cursor: pointer;
+    font-size: 2.9rem;
+}
+.submit2btn:hover .submit2btn.active{
+    background:black;
+        color:white;   
+}
+
+
+.content-table {
+    width: 89%;
+    margin-top: 1rem; 
+     background-color: rgba(255,0,0,0.5);
+    border-collapse: collapse;
+  border-radius: 22px;
+   overflow: hidden;
+  box-shadow: 0 0 40px rgba(200, 333, 550, 0.6);
+}
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+    .content-table td {
+        padding: 0.1rem;
+    position: relative;
+        padding-right: 50%;
+}
+    	
+    
+    td:before { 
+        position: absolute;
+        right: 3rem;    
+        width: 45%;
+        white-space: nowrap;
+    
+	}
+    td:nth-of-type(1):before { content: "اسم المتبرع :"; }
+	td:nth-of-type(2):before { content: "الدائرة :"; }
+	td:nth-of-type(3):before { content: "البلدية :"; }
+	td:nth-of-type(4):before { content: "رقم الهاتف :"; }
+	td:nth-of-type(5):before { content: "طريقة الاتصال :"; }
+	td:nth-of-type(6):before { content: "وقت الاتصال :"; }
+
+.content-table thead tr {
+  background-color:  rgba(0,0,0,0.65);
+  color: #ffffff;
+  text-align: right;
+  font-weight: bold;
+    display: flex;
+   
+    
+}
+.content-table th,
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.content-table tbody tr:nth-of-type(even) {
+  background-color:rgba(0,0,0,0.31) ;
+}
+.content-table tbody tr:last-of-type {
+  border-bottom: 5px solid rgba(0,0,0,0.69);
+}
+.walidclass {
+    box-shadow: 0 0 25px rgba(0,0, 0, 1);
+  border-radius: 20px;
+}
+.messageT{
+    color: black;
+    }
+   .donationn {
+    margin: 6rem;
+     margin-left: 8rem;
+       line-height: 6rem;
+    
+}
+    .donationn h1{
+        padding: 2rem;
+    }  
+    #support{
+        height: 90vh;    
+    }
+    #support a{
+       width: 55%;
+        height: 6rem;
+    }
+    #support .donationn{
+        margin: 6rem;
+     margin-left: 8rem;
+       line-height: 6rem;
+        font-size: 150%;
+    }
+    
+    #usersC{
+        height: 90vh;
+    }
+    #usersC a{
+           width: 55%;
+        height: 6rem;
+       }
+    
+    #usersC .donationn{
+        margin: 6rem;
+     margin-left: 8rem;
+       line-height: 6rem;
+        font-size: 150%;
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (min-width: 480px) and (max-width: 1029px) {
+    
+    body{
+    font-family: 'Cairo', sans-serif;
+    line-height: 2em;
+    font-size: 160%;
+}
+
+.logo{
+    font-size: 300%;
+}
+
+
+#navbar ul{
+   
+    height: 70vh;
+    
+
+}
+
+       
+ .checkbtn{
+    
+  font-size: 5rem;
+ 
+}
+
+.lhead{
+    font-size: 7rem;
+    margin-bottom: 1rem;
+    line-height: 10rem;
+}
+.lead{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.btn{
+   
+    height: 80px;
+    width: 250px;
+ 
+}
+
+.item{
+    
+    font-size: 250%;  
+}
+
+.text-center{
+    text-align: center;
+    font-size: 5rem;
+    padding: 4rem;
+        
+}
+.article{
+   
+    font-size: 125%;   
+}
+
+.who-text {
+   font-size: 157%;
+    line-height: 4.2rem;
+}
+.text-center2{
+    font-size: 5rem;
+   
+}
+
+.container4 {
+     font-size: 1.8rem;  
+
+}
+
+   
+.form{
+   
+    width: 65vw;
+    height: 95vh;
+    padding: 40px;
+    margin: auto;
+    margin-top: 40px;
+   position: relative;
+    box-shadow: 0 0 40px rgba(200, 333, 550, 0.6);
+    font-size:  1.8rem;
+}
+     #CALLus{
+         height: 90vh;
+        
+    }
+    #CALLus .form {
+        height: 70vh;
+         background-color: rgba(255,0,0,0.7);
+        box-shadow: 0 0 1.25rem rgba(255,0,0,0.7);
+        
+    }
+     .popupDemd form{
+       padding: 25px;
+    }
+    
+
+.form select{
+    font-family: 'Cairo', sans-serif;
+    border-radius: 24px;
+    margin: 10px;
+    width: 60%;
+    height: 70px;
+    transition: width 0.4s ease-in-out;
+    transition: hieght 0.4s ease-in-out;
+    font-size:  2.2rem;
+   
+    
+}
+    .form select option{
+        max-width: 30%  ;
+        min-width: 30%  ;
+        font-size: 1rem ;
+}
+    
+   
+    select{
+    font-family: 'Cairo', sans-serif;
+    border-radius:              26px;
+    margin:                     15px;
+    width:                       45%;
+    height:                     5rem;
+    text-align:               center;
+    text-align-last:          center;
+    font-size:                  2rem;
+    background-color:      aliceblue;
+   
+    }
+    select option{
+      
+     
+    }
+    
+    
+.form .inname ,.inemail, .inepass, .inphonenmbr, .TtDemd{
+  
+    padding: 25px;
+    width: 60%;
+    height: 70px;
+   font-size:  2rem;
+  
+}
+    
+     .form .TtDemd{
+        height: 15rem; 
+    }
+    .form .TtDemd:focus{
+       height: 18rem;
+    }
+.form .inname:focus ,.inemail:focus, .inepass:focus, .inphonenmbr:focus{
+    width: 100%;
+    height: 88px;
+    font-size:  2.2rem;
+ 
+}
+    .form label{
+        font-size: 2.7rem;
+    }
+
+
+.close{
+    font-size:6rem;
+   
+}
+.submitt input{
+  
+     width: 77%;
+    height: 115px;
+    font-size: 2.6rem;
+}
+
+
+
+
+.messageT  {
+   
+    height: 33vh;
+    top: 30vh;
+    left : 1vw;
+    right:1vw;
+    margin: auto;
+    font-size: 3.5rem;
+    line-height: 5.7rem;
+    
+    }
+    .messageT i {
+        font-size: 230%;
+    }
+
+
+
+    
+
+.popupSearch{
+   
+    height: 180vh;
+    }
+
+.form2{ 
+    
+    font-size: 2.5rem;
+    
+}
+    
+       .containerrr {
+   
+    font-size: 2.5rem;
+           padding: 1.1rem;
+     }
+   
+    
+    #pagination-wrapper .bttn {
+ 
+        font-size: 1.9rem;
+        
+    }
+       
+    
+    
+.adress4{
+    flex: 1;
+width: 74%;
+}
+
+.sbloodgroup2{
+  flex: 0.5 ;
+    width: 74%;
+     
+}
+   .donationn {
+    margin: 6rem;
+     margin-left: 8rem;
+       line-height: 6rem;
+       font-size: 2.6rem;
+    
+}
+    .donationn h1{
+        padding: 2rem;
+    }  
+    #support{
+        height: 90vh;    
+    }
+    #support a{
+       width: 55%;
+        height: 6rem;
+    }
+    #support .donationn{
+        margin: 6rem;
+     margin-left: 8rem;
+       line-height: 6rem;
+        font-size: 150%;
+    }
+    
+    #usersC{
+        height: 90vh;
+    }
+    #usersC a{
+           width: 55%;
+        height: 6rem;
+       }
+    
+    #usersC .donationn{
+        margin: 6rem;
+     margin-left: 8rem;
+       line-height: 6rem;
+        font-size: 150%;
+    }
+
+    
+    
+    
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1030px) {
+  
+
+body{
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.6em;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    font-size: 200%;
+}
+.text-primary{
+    color: rgba(255,0,0,0.9);
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color:rgb(240,248,255,0.7);
+    color:black;
+    justify-content: space-between;
+    padding: 1.1rem;
+    z-index: 99;
+    
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+#navbar ul il a{
+    color: black;
+    margin: 0 0.25rem;
+    padding: 0.75rem;
+}
+#navbar ul il a:hover {
+    background-color:rgba(255,0,0,0.6); 
+    border-radius: 6px;
+    transition: .5s;
+ 
+}
+
+    
+    
+    
+ .checkbtn{
+ position: absolute;
+     display: none;
+  font-size: 30px;
+  color: black;
+  float: left;
+  line-height: 80px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+#check{
+    position: absolute;
+  display: none;
+}
+    
+    
+
+#showcase{ 
+    background:#333 
+        url('../images/walo.jpg') no-repeat 
+        center center/cover;
+    height: 100vh;
+    color: white;
+}
+
+#showcase .showcase-content{
+  display: flex;
+    flex-direction:column; 
+        text-align:center;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0, 0, 0,0.4);
+    height: 100%;
+    width: 100%;
+}
+
+
+.lhead{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 5rem;
+}
+.lead{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.btn{
+    display: inline-block;
+    color: white;
+     background-color: rgba(255,0,0,0.9) ;
+    height: 40px;
+    width: 140px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 8px;
+    
+}
+.btn:hover{
+     background:black;
+        color:white; 
+}
+
+
+
+#what{
+    background-color: aliceblue;
+    color: black;
+}
+.container{
+   display: flex;
+    
+    padding: 4rem 5.5rem 5.5rem 5.5rem;
+    align-items:stretch;
+  flex-direction: row;
+    flex-wrap: wrap;
+   
+    
+     
+}
+.item{
+    
+    flex: 1;
+    font-size: 200%;
+    background-color: rgba(178,34,34,1);
+    border-radius: 50%;
+    padding: 1.5rem ; 
+    max-height: 80px;
+    max-width: 80px;
+    min-height: 80px;
+    min-width: 80px;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 20px rgba(178,34,34,0.8);
+}
+.waloo {
+    
+    padding: 4px;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    margin: 30px 16px;
+    flex-direction: row;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(178,34,34,0.8);
+     background-color: rgba(255,0,0,0.1);
+}
+.container a:hover{ 
+    color: rgba(255,0,0,1)
+}
+
+.text-center{
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 2rem
+        
+}
+.article{
+    flex: 3;
+    text-align: center;
+    margin: 20px 8px 20px 14px ;
+    
+}
+
+
+#who{
+    background-color: aliceblue;
+   display: flex;
+    flex-direction: column;
+     align-items: center;
+    justify-content: center;
+      
+}
+.who-container{ 
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     text-align: center; 
+    width: 70%;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    border-radius: 25px;
+    background:#333
+        url('../images/people.jpg') no-repeat
+        center center/cover;
+    margin-bottom: 90px;
+    background-color: rgba(0,0,0,0.3);
+   
+}
+
+.who-text {
+    
+    flex: 1;
+    margin: 10%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: bold;
+}
+.text-center2{
+    flex: 1;
+    font-size: 3rem;
+    padding-bottom: 6rem;
+    
+}
+
+
+
+#main-footer {
+
+background-color: rgb(80,80,80,0.95);
+height: 45px;
+    color: black;
+ 
+   
+}
+.container4 {
+    
+    
+     font-size: 0.8rem;  
+     align-content: center;
+    text-align: center;
+    padding-top: 0.5rem; 
+
+}
+
+
+
+.popupform ,.popupDemd{
+    background-color: rgba(0,0,0,0.8);
+    background-size: cover;
+    z-index: 9999;
+    position: fixed;
+    top:0;
+    bottom: 0;
+   height: 100vh;
+    width: 100vw;  
+}
+    
+     
+    
+.form{
+    width: 25vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(255,0,0,0.5);
+    padding: 1.25rem;
+    margin: auto;
+    margin-top: 1.25rem;
+    border-radius: 1.25rem;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 1.25rem rgba(200, 333, 550, 0.6);
+    transition:   transition 0.5s;
+    
+}
+    #CALLus{
+         height: 90vh;
+        
+    }
+    #CALLus .form {
+         background-color: rgba(255,0,0,0.7);
+        box-shadow: 0 0 1.25rem rgba(255,0,0,0.7);
+        
+    }
+ 
+
+.form select{
+    font-family: 'Cairo', sans-serif;
+    border-radius: 0.313rem;
+    margin: 0.25rem;
+    width: 10rem;
+    height: 1.563rem;
+    transition: width 0.4s ease-in-out;
+    transition: hieght 0.4s ease-in-out;
+}
+.form select:focus{
+    width: 75%;
+    height: 1.875rem;
+}
+    .TtDemd::-webkit-scrollbar {
+   display: none;
+ }
+.form .inname ,.inemail, .inepass, .inphonenmbr ,.TtDemd{
+    border-style: none;
+    border: 0px;
+    border-bottom: 0.125rem solid black;
+    font-family: 'Cairo', sans-serif;
+    border-radius: 0.313rem;
+    color: black;
+    margin: 0.313rem;
+    padding: 0.813;
+    width: 10rem;
+    height: 1.625rem; 
+    background-color: transparent;
+    transition: width 0.4s ease-in-out;
+    transition: hieght 0.4s ease-in-out;
+}
+    .form .TtDemd{
+        height: 4rem; 
+    }
+    .form .TtDemd:focus{
+      outline: none; 
+       border-radius: 0.313rem; 
+      background-color: transparent;
+       width: 100%;
+       height: 7rem;
+    }
+.form .inname:focus ,.inemail:focus, .inepass:focus, .inphonenmbr:focus{
+ outline: none; 
+     background-color: transparent;
+    width: 100%;
+    border-radius: 0.313rem;
+    height: 2.5rem;
+ 
+}
+
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: black;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: black;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: black;
+}
+    
+
+.close{
+    position: absolute;
+    font-size:42px;
+    right: 14px;
+    top: 5px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.submitt input{
+    border-style: hidden;
+     width: 180px;
+    height: 44px;
+    font-family: 'Cairo', sans-serif;
+    border-radius: 10px;
+    margin: 13px;
+    background-color: rgba(255,0,0,0.9) ;
+    border-color: black; 
+    box-shadow: 0 0 20px rgba(200, 333, 550, 0.6);
+    cursor: pointer;
+}
+.submitt input:hover{
+    background:black;
+        color:white;   
+
+}
+
+select{
+    font-family: 'Cairo', sans-serif;
+    border-radius: 5px;
+    margin: 4px;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    text-align-last:center;
+}
+    
+.messageT  {
+    width: 35vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0,171,102,0.9);
+    border-radius: 6px;
+    text-align: center;
+    justify-content:space-around;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0,171,102,0.9);
+    position: fixed;
+    top: 35vh;
+    left : 10vw;
+    right:10vw;
+    margin: auto;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    
+    }
+    .messageT i {
+        font-size: 250%;
+    }
+  
+   
+    
+    
+    
+
+.popupSearch{
+     background: #333
+        url('../images/wiwe.jpg') no-repeat 
+        center center/cover;
+    color: white;
+    height: 130vh;
+    width: 99vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    
+}
+    
+
+.form2{ 
+    width: 65vw;
+    min-width: 650px;
+    height: 80px; 
+    background-color: rgba(255,0,0,0.65);
+    border-radius: 16px;
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    justify-content:flex-start;
+    align-items:center;
+    box-shadow: 0 0 20px rgba(200, 333, 550, 0.6);
+}
+    
+    
+    
+    
+    .containerrr {
+     border-radius: 16px;
+    background-color: rgba(250, 250, 250, 0.3);
+    padding: 10px;
+    width: 55vw;
+        margin-top: 10px;
+     height: 3.7rem;
+    min-width: 650px;
+    text-align: center;
+    justify-content:flex-start;
+    align-items:center;
+}
+    #pagination-wrapper{
+        display:flex;
+     text-align: center;
+    align-items:center;
+        justify-content: center;
+        
+    }
+    .pagina-wrapper{
+         display: block;
+         text-align: center;
+    align-items:center;
+    }
+    
+    #pagination-wrapper .bttn {
+    border: none;
+        width: 2.7rem;
+        height: 2.7rem;
+        border-radius: 50%;
+         background-color: rgba(255,0,0,0.65);
+        
+    }
+    
+    #pagination-wrapper .bttnS{
+        margin-left: 0.6rem;
+         border: none;
+        width: 3rem;
+        height: 2.1rem;
+        border-radius: 10%;
+         background-color: rgba(255,0,0,0.65);
+       
+    }
+    #pagination-wrapper .bttnF{
+      margin-right: 0.6rem;
+         border: none;
+        width: 3rem;
+        height: 2.1rem;
+        border-radius: 10%;
+         background-color: rgba(255,0,0,0.65);    
+    }
+    
+     #pagination-wrapper .bttn:hover {
+        background-color:rgba(0,0,0,0.6) ;
+    }
+     #pagination-wrapper .bttnF:hover {
+        background-color:rgba(0,0,0,0.6) ;
+    }
+    
+     #pagination-wrapper .bttnS:hover {
+        background-color:rgba(0,0,0,0.6) ;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+.adress4{
+    flex: 3;
+
+}
+
+.sbloodgroup2{
+  flex: 0.7;
+     
+}
+.submit2{
+    flex: 1;
+       
+}
+.submit2btn{
+    border-style: hidden;
+     width: 150px;
+    height: 50px;
+    font-family: 'Cairo', sans-serif;
+    border-radius: 10px;
+    margin: 13px;
+    background-color: rgba(255,0,0,0.9) ;
+    border-color: black; 
+    box-shadow: 0 0 20px rgba(200, 333, 550, 0.6);
+    cursor: pointer;
+}
+.submit2btn:hover{
+    background:black;
+        color:white;   
+}
+
+
+.content-table {
+    width: 65vw;
+    min-width: 650px;
+    margin-top: 10px;
+     background-color: rgba(255,0,0,0.5);
+    border-collapse: collapse;
+  
+  
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(200, 333, 550, 0.6);
+}
+.content-table thead tr {
+  background-color:  rgba(0,0,0,0.65);
+  color: #ffffff;
+  text-align: right;
+  font-weight: bold;
+}
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+    
+.content-table tbody tr:nth-of-type(even) {
+  background-color:rgba(0,0,0,0.3) ;
+}
+    
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid rgba(0,0,0,0.65);
+}
+    
+.walidclass {
+    box-shadow: 0 0 13px rgba(0,0, 0, 1);
+  border-radius: 5px;
+}
+.messageT{
+    color: black;
+    }
+    
+    
+ .donationn {
+    margin: 6rem;
+     margin-left: 15rem;
+    line-height: 2.1rem;
+}
+    .donationn h1{
+        padding: 1rem;
+    }    
+    
+    #support{
+        height: 85vh;
+        
+    }
+    #usersC{
+        height: 85vh;
+    }
+    
+   
+}
+
+
+
+
+
+

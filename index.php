@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="يطمح موقع اتشو شوية الى تشكيل مجتمع من المتبرعين بالدم, يقدم خدمة تزويد المستشفيات والاستعجالات بالدم او  
+   البلازيما عن طريق الوصول الى اقرب المتبرعين
+      بطريقة اسرع,atchochwiya atchou chwiya">
+    <meta name="keywords" content="achtochwiya, atcho chwiya , atchou chwiya , atch chwiya 
+    بنك الدم,التبرع بالدم ,اتشو شوية,التضامن , اليوم العالمي للتبرع بالدم ,المستشفيات في الجزائر ,الجزائر ,بلديات و ولايات و دوائر الجزائر , ">
+    <title>موقع أتشو شوية </title>
+    
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="css/styling.css">
+    <script src="https://kit.fontawesome.com/77b6353fe5.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+
+
+</head>
+
+
+<body id="home">
+
+    <nav id="navbar">
+       
+        <h1 class="logo">
+           <a href="index.php" >
+            <span class="text-primary">
+                <i class="fas fa-hand-holding-water"></i> أتشو</span> شوية
+                </a>
+        </h1>
+        
+        <ul>
+            <il><a href="#showcase">الرئيسية</a></il>
+            <il><a href="#what">الخدمات</a></il>
+            <il><a href="#who">من</a></il>
+            <il><a href="callUS.php">اتصل بنا</a></il>
+            <il><a href="donating.php">التبرع بالدم </a></il>
+            <il><a href="support.php">ادعمنا  </a></il>
+            <il><a href="usersC.php">شروط الاستخدام  </a></il>
+        </ul>
+        
+        <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+               </label>
+      
+      
+      
+    </nav>
+
+   
+    <header id="showcase">
+        <div class="showcase-content">
+            <h1 class="lhead">
+                دمك حياة لإخوتك
+            </h1>
+            <p class="lead">
+                وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعًا
+            </p>
+            <a href="donating.php" class="btn"> اقرأ المزيد </a>
+        </div>
+    </header>
+
+    <section id="what">
+        <h2 class="text-center"><span class="text-primary">ماذا </span> نقدم لكم </h2>
+        <div class="container">
+
+<div class="waloo">
+           <a href="#popupform" id="button1" class="button1">
+            <div class="item"><i class="fas fa-user-plus"></i>
+            </div>
+            </a>
+            <a href="#popupform" id="button11" class="button1">
+                <div class="article">
+                    <h3>إضافة متبرع جديد</h3>
+                    <p>كلما زاد عدد المتبرعين زادت نسبة انقاذ حياة فلا تنسى دعوة الأصدقاء و الأقارب للتسجيل </p>
+                </div>
+                 </a>
+            
+</div>
+           <div class="waloo">
+           <a href="searchp.php" >
+            <div class="item">
+                <i class="fas fa-search"></i>
+            </div>
+               </a>
+             <a href="searchp.php" >
+                        
+                <div class="article">
+                    <h3>البحث عن المتبرعين </h3>
+                    <p> يمكنك البحث عن المتبرعين حسب الزمر الدموية و كذالك حسب موقع سكن المتبرع </p>
+                </div>
+            </a>
+            </div>
+            <div class="waloo">
+           <a href="#popupDemd" id="button2" class="button2">
+            <div class="item"><i class="fas fa-pencil-alt"></i>
+          </div>
+                </a>
+                <a href="#popupDemd" id="button22" class="button2">
+            <div class="article">
+                <h3>طلب زمرة دموية </h3>
+                <p>يمكنك كتابة طلب زمرة دموية في حال عدم توفر متبرعين بعد البحث و سنحاول توفيرهم </p>
+            </div>
+                 </a>
+
+        </div>
+</div>
+
+    </section>
+
+    <section id="popupform" class="popupform">
+        <div class="form">
+            <div id="close" class="close">+</div>
+            <form id="form1" action="PHP/insert.php" method="post">
+
+              
+               
+                <div class="sbloodgroup">
+                      
+                        <select name="Sgroup" id="bloodgroup" >
+                    
+                       <option value = -1 selected="selected"> فصيلة دم المتبرع </option>
+                       
+                        <option value="A+">  A+ </option>
+                        <option value="A-">  A- </option>
+                        <option value="B+">  B+ </option>
+                        <option value="B-">  B- </option>
+                        <option value="AB+"> AB+ </option>
+                        <option value="AB-"> AB- </option>
+                        <option value="O+">  O+ </option>
+                        <option value="O+">  O- </option>
+                            
+                    </select>
+
+                </div>
+
+                <div class="shcommunication">
+                    
+                    <select name="Cm_Way" id="hcomm" >
+                       
+                        <option value = -1 selected="selected">طريقة التواصل </option>
+                        <option value="اتصال هاتفي">اتصال هاتفي</option>
+                        <option value="رسائل نصية قصيرة">  رسائل نصية  </option>
+                      
+                        <option value="رسائل نصية قصيرة+ اتصال هاتفي">رسائل نصية + اتصال هاتفي</option>
+                       
+                    </select>
+
+                </div>
+                <div class="swcomm">
+                   
+                    <select name="Cm_Time" id="wcomm">
+                      
+                       <option value = -1 selected="selected"> وقت الإتصال </option>
+                        <option value="الصباح"> الصباح</option>
+                        <option value=" مع العشية "> مع العشية</option>
+                        <option value="كل وقت 24/24">كل وقت 24/24</option>
+                      
+                    </select>
+                </div>
+                
+               
+                 <div class="adress">
+                    <label> مكان الإقامة : </label> <br>
+
+                    <div class="swilaya">
+                        <select name="Wilaya" id="wilaya" onchange="walo()" >
+                       
+                        </select>
+                    </div>
+
+                    <div class="sdayra">
+                        <select name="Dayra" id="dayra" onchange="walot()" >
+                            <option value = -1 selected="selected"> اختر الدائرة </option>
+
+                        </select>
+                    </div>
+
+                    <div class="sbaladiya">
+
+                        <select name="Baladiya" id="baladiya">
+                            <option value = -1 selected="selected" > اختر البلدية </option>
+
+
+                        </select>
+                    </div>
+                      <div id="name">
+                    <input id="FULL_Name" class="inname" type="text" name="Full_Name" placeholder="إسم المتبرع او اللقب "  required="true">
+
+                </div>
+                <div id="email">
+    
+                    <input id="Email" class="inemail" type="email" name="Email" placeholder="البريد الالكتروني " required="true">
+                </div>
+                <div id="P_Word">
+                  
+                    <input id="PP_Word" class="inepass" type="password" name="P_Word" placeholder="كلمة المرور " minlength="8" required="true">
+                </div>
+                <div id="phonenmbr">
+                    
+                    <input id="Phone_Number" class="inphonenmbr" type="text" name="Phone_Number" placeholder="رقم الهاتف  " min="500000000" max="777777777" required="true">
+                </div>
+
+
+
+
+                </div>
+                 <div class="submitt">
+                     <input class="submit1" type="submit" name="submit6" value="اضافة متبرع "  >  
+                </div>
+                
+
+            </form>
+           
+        </div>
+        
+         <p class="messageT">
+                
+            </p>
+            
+    </section>
+    
+    <section id="popupDemd" class="popupDemd">
+             <div class="form">
+            <div id="close2" class="close">+</div>
+             <form id="form4" action="PHP/insertDemd.php" method="post">
+             
+             <select name="demdSgroup" id="Demdbloodgroup" >
+                      
+                       <option value = -1 selected="selected"> فصيلة الدم المطلوبة </option>
+                        <option value="A+"> A+ </option>
+                        <option value="A-"> A- </option>
+                        <option value="B+"> B+ </option>
+                        <option value="B-"> B- </option>
+                        <option value="AB+">AB+ </option>
+                        <option value="AB-">AB- </option>
+                        <option value="O+"> O+ </option>
+                        <option value="O-"> O- </option>
+                    
+                    </select> 
+                    
+              <div id="nameDemd">
+                    <input id="NameDemd" class="inname" type="text" name="Full_Name" placeholder="الإسم و اللقب "  required="true">
+                </div>
+                
+                <div id="demdemail">
+                    <input id="DemdEmail" class="inemail" type="email" name="Email" placeholder="البريد الالكتروني " required="true">
+                </div>
+              
+                <div id="demdphonenmbr">
+                    <input id="DemdPhone_Number" class="inphonenmbr" type="text" name="Phone_Number" placeholder="رقم الهاتف  " min="500000000" max="799999999" required="true">
+                </div>
+                
+                
+                    <div id="tDemd">
+                    <textarea rows="4"  id="TDemd" class="TtDemd" type="text" name="Full_Name" placeholder= " اكتب الولاية او الدائرة على الاقل مع ذكر ان كانت الحالة مستعجلة...."  required="true"></textarea>
+                    
+                </div>
+                <div class="submitt">
+                     <input class="submit1" type="submit" name="submit7" value="طلب الزمرة الدموية "  >  
+                </div>
+                
+                 </form>   
+        </div>
+         <p class="messageT">
+                
+            </p>
+    </section>
+    
+    
+    
+   
+
+
+    <section id="who">
+         <h2 class="text-center2"> <span class="text-primary">من</span> نحن </h2>
+         
+        <div class="who-container">
+          <div class="who-text">
+
+            <p>يطمح موقع اتشو شوية الى تشكيل مجتمع من المتبرعين بالدم, يقدم خدمة تزويد المستشفيات والاستعجالات بالدم او البلازما عن طريق الوصول الى اقرب المتبرعين بطريقة اسرع, نحاول جمع اكبر عدد من المتبرعين في منصة واحدة بهدف تفادي ازمة نقص الدم و البلازما بمستشفيات الجزائر. </p>
+
+        </div>
+           </div>
+         
+           
+    </section>
+
+
+
+    <footer id="main-footer" class="text-center3">
+        <div class="container4">
+            <p>حقوق النشر محفوظة لموقع اتشو شوية &copy; 2021,</p>
+        </div>
+    </footer>
+
+    <script src="js/javainstr.js"> </script>
+  
+</body>
+
+</html>
